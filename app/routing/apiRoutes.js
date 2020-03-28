@@ -34,7 +34,7 @@ module.exports = function (app) {
         }
 
         //  after completing the loop and finding the best match, add user to friends then send bestFriend result in the response
-        friends.push(user);
+        friends.push(userInput);
         res.json(friends[bestFriend]);
     });
 };
